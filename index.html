@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construtor de Site</title>
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="shortcut icon" href="./src/images/ico.png" type="image/x-icon">
+</head>
+<body>
+    <div class="g-layout js-g-layout">
+        <div class="layout js-aside-menu" hidden>
+            <h2 class="layout__title">Layout</h2>
+            <div class="layout__box">
+                <b>Menu</b>
+                <label for="" class="label">cor de fundo:</label>
+                <div class="layout__g_color">
+                    <input type="text" oninput="ui.menu_color_bg = this.value" class="input-text js-menu-color-br">
+                    <input type="color" oninput="ui.menu_color_bg = this.value" class="color">
+                </div>
+                <label for="" class="label">cor do texto:</label>
+                <div class="layout__g_color" >
+                    <input type="text" oninput="ui.menu_color_text = this.value" class="input-text js-menu-color-text">
+                    <input type="color" oninput="ui.menu_color_text = this.value" class="color">
+                </div>
+            </div>
+            <div class="layout__box">
+                <b>Banner</b> <br>
+                <label for="" class="label">Texto</label>
+                <input type="text" oninput="ui.text_banner = this.value" value="texto do banner" class="input-text">
+                <label for="" class="label">Tamanho texto</label>
+                <input type="range" min="11" list="tamanhos" onchange="ui.text_banner_size = this.value" max="54">
+                <datalist id="tamanhos">
+                    <option value="" label="11">
+                    <option value="16" >
+                    <option value="18" >
+                    <option value="24" >
+                    <option value="32" label="32" >
+                    <option value="42" >
+                    <option value="52" >
+                    <option value="62" >
+                    <option value="72" label="72">
+                </datalist>
+            </div>
+        </div>
+        <div>
+            <header class="menu js-menu_color_bg">
+                <nav class="container">
+                    <div class="g-menu">
+                        <div>
+                            <img src="./src/images/logo.svg" alt="logo-marca">
+                        </div>
+                        <div class="l-menu__links">
+                            <a href="#inicio" class="menu__link"> Inicio </a>
+                            <a href="#sobre" class="menu__link"> Sobre </a>
+                            <a href="#portifolio" class="menu__link"> Portifólio </a>
+                            <a href="#contato" class="menu__link"> Contato </a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="banner">
+                    <div class="banner__text js-text_banner">texto do banner</div>
+                </div>
+            </main>
+            <footer></footer>
+        </div>
+    </div>
+    <img src="./src/images/layers.svg" class="btn-editor" onclick="ui.construtor = !ui.construtor">
+    <script src="./src/js/index.js" type="module"></script>
+</body>
+</html>

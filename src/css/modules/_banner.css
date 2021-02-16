@@ -1,0 +1,17 @@
+.banner {
+    display: block;
+    min-height: 70vh;
+    background-image: url('../../images/giphy.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner__text {
+    display: grid;
+    min-height: 70vh;
+    align-items: center;
+    justify-content: center;
+    color: #EEE;
+    background-color: rgba(0, 0, 0, .7);
+
+}

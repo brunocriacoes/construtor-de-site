@@ -1,0 +1,23 @@
+.color {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+.input-text {
+    display: block;
+    width: 100%;
+    border: 1px solid #EEE;
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    line-height: 30px;
+}
+.label {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    color: #CCC;
+}
